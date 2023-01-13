@@ -4,6 +4,7 @@ use games;
 CREATE TABLE olympic_games(id int ,game_type varchar(30),player_name varchar(20),country varchar(30),no_of_players int
 ,no_of_teams int ,no_of_medals int,medal_type varchar(30),jersey_no int,winning_prize_amount int);
 SELECT * FROM olympic_games;
+SELECT count(*) FROM olympic_games;
 INSERT INTO olympic_games VALUES(1,'Outdoor','Virat','India',11,2,1,'Gold',11,10000);
 INSERT INTO olympic_games VALUES(2,'Indoor','Naveen','Singapore',2,2,2,'Silver',1,3999);
 INSERT INTO olympic_games VALUES(3,'Outdoor','Sunitha','Russia',7,1,3,'Gold',2,2999);
@@ -44,3 +45,4 @@ INSERT INTO olympic_games VALUES(37,'Outdoor','Sadi','Cambodia',10,2,3,'Gold',22
 INSERT INTO olympic_games VALUES(38,'Outdoor','Mallu','Canada',14,2,7,'Silver',25,100000);
 INSERT INTO olympic_games VALUES(39,'Indoor','Supritha','Bhutan',2,2,9,'Silver',24,1000);
 INSERT INTO olympic_games VALUES(40,'Outdoor','Sangetha','Brazil',7,1,10,'Silver',21,100);
+commit
